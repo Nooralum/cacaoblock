@@ -1,4 +1,5 @@
 import 'package:cacaoblock/constants.dart';
+import 'package:cacaoblock/views/bourse/bourses.dart';
 import 'package:cacaoblock/views/transaction/transac.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -226,9 +227,27 @@ class _HomeScreenState extends State<HomeScreen> {
       bottomNavigationBar: bottomBar(
         onPressed1: null,
          onPressed2: TransactionPage.id, 
-         onPressed3: null, 
+         onPressed3: BoursesPage.id, 
          onPressed4: null
          )
+      // BottomNavigationBar(
+      //   selectedItemColor: kRose,
+      //   items: [
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.abc)
+      //       ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.abc)
+      //       ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.abc)
+      //       ),
+      //     BottomNavigationBarItem(
+      //       icon: Icon(Icons.abc)
+      //       ),
+
+      // ],)
+     
     );
   }
 }
@@ -258,7 +277,7 @@ class bottomBar extends StatelessWidget {
             onPressed: (){
               Navigator.pushNamed(context, onPressed1);
             }, 
-            icon: Icon(Icons.home, size: 40,)
+            icon: Icon(Icons.home, size: 40, )
             ),
           IconButton(
             padding: EdgeInsets.only(left: 30, right: 20),
@@ -279,7 +298,7 @@ class bottomBar extends StatelessWidget {
             onPressed:  (){
               Navigator.pushNamed(context, onPressed4);
             }, 
-            icon: Icon(Icons.more_outlined, size: 40,)
+            icon: Icon(Icons.more_outlined, size: 40, color: kWhite,)
             ),
         ],
       ),

@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: BoursesPage.id,
+      initialRoute: Connection.id,
       routes: {
         Connection.id:(context) => Connection(),
         HomeScreen.id:(context) => HomeScreen(),
