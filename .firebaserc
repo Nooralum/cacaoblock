@@ -1,0 +1,8 @@
+{
+  "projects": {
+    "default": "cacaoblock-510af",
+    "staging": "cacaoblock-510af"
+  },
+  "targets": {},
+  "etags": {}
+}

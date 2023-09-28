@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "331092883707",
+    "project_id": "cacaoblock-510af",
+    "storage_bucket": "cacaoblock-510af.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:331092883707:android:1bb14206c5699ab973d85e",
+        "android_client_info": {
+          "package_name": "com.example.cacaoblock"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAJvxy294xaIZwKNpsIPyWhvJdJ5XDuiF4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
