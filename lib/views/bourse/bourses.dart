@@ -1,4 +1,5 @@
 // ignore_for_file: public_member_api_docs, sort_constructors_first
+import 'package:cacaoblock/views/seemore/seemore.dart';
 import 'package:flutter/material.dart';
 
 import 'package:cacaoblock/constants.dart';
@@ -114,7 +115,7 @@ class _BoursesPageState extends State<BoursesPage> {
           onPressed1: HomeScreen.id, 
           onPressed2: TransactionPage.id, 
           onPressed3: null, 
-          onPressed4: null
+          onPressed4: VoirPlus.id,
           ),
     );
   }

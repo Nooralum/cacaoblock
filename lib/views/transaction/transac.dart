@@ -54,21 +54,7 @@ class _TransactionPageState extends State<TransactionPage> {
           padding: EdgeInsets.all(10),
           child: Column(
             children: [
-             Row(
-              mainAxisAlignment: MainAxisAlignment.end,
-              children: [
-                MyText(
-                  txt: 'Effectuer un transfert', 
-                  color: kWhite, 
-                  size: 25
-                  ),
-                  SizedBox(width: 20,),
-                 CircleAvatar(
-                  radius: 35,
-                child: Icon(Icons.account_balance),
-               )
-              ],
-             ),
+             Appbar(txt1: 'Effectuer transfert', icon: Icon(Icons.account_balance),),
              SizedBox(height: 20,),
             Container(
               padding: EdgeInsets.all(20),
@@ -194,7 +180,34 @@ class _TransactionPageState extends State<TransactionPage> {
         onPressed1: HomeScreen.id, 
         onPressed2: null, 
         onPressed3: BoursesPage.id, 
-        onPressed4: null),
+        onPressed4: null,),
+    );
+  }
+}
+
+class Appbar extends StatelessWidget {
+  const Appbar({
+    super.key, required this.txt1, required this.icon,
+  });
+  final String txt1;
+  final Icon icon;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+     mainAxisAlignment: MainAxisAlignment.end,
+     children: [
+       MyText(
+         txt: txt1, 
+         color: kWhite, 
+         size: 25
+         ),
+         SizedBox(width: 20,),
+        CircleAvatar(
+         radius: 35,
+         child: icon,
+      )
+     ],
     );
   }
 }
