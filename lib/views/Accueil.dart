@@ -112,7 +112,13 @@ class _HomeScreenState extends State<HomeScreen> {
                             onPressed: null, 
                             child: Row(
                               children: [
-                                MyText(txt: 'Envoyer', size: 20, color: kWhite),
+                                // MyText(txt: 'Envoyer', size: 20, color: kWhite),
+                                TextButton(
+                                  onPressed: (){
+                                    Navigator.pushReplacementNamed(context, TransactionPage.id);
+                                  }, 
+                                  child: MyText(txt: 'Envoyer', color: kWhite, size: 20)
+                                  ),
                                 SizedBox(width: 10,),
                                 Icon(Icons.arrow_outward, size: 30,)
                               ],
